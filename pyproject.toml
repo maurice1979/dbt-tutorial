@@ -1,0 +1,21 @@
+[project]
+name = "dbt-tutorial"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "dbt>=1.0.0.38.25",
+    "dbt-core>=1.9.2",
+    "dbt-postgres>=1.9.0",
+    "ruff>=0.9.5",
+]
+
+[tool.ruff]
+# Same as Black.
+line-length = 120
+indent-width = 4
+
+[env]
+DBT_PROFILES_DIR="~/.dbt"
+DBT_TARGET="dev"
