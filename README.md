@@ -11,7 +11,9 @@ Run the command from the dbt tutorial with `uv run <command>`.
 
 > [!TIP]
 > If you have other dbt environment in your computer, it might be necessary to re-refine some environment variables:
+>
 > `export DBT_PROFILES_DIR=/<path-to-your>/.dbt`
+>
 > `export DBT_TARGET=<your-target>`
 
 # Create a Docker container for the Database
