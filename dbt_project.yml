@@ -33,7 +33,9 @@ models:
   jaffle_shop:
     # Config indicated by + and applies to all files under models/example/
     example:
-      +materialized: view
+      # Generates a view
+      # +materialized: view 
+      +materialized: table
 
 seeds:
   jaffle_shop:

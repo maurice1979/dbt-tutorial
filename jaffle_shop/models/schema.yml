@@ -1,0 +1,28 @@
+
+version: 1
+
+models:
+  - name: customers
+    description: "First table"
+    columns:
+      - name: customer_id
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null
+      - name: customer_name
+        description: "Name of the consumer"
+        data_tests:
+          - not_null
+      - name: first_order_date
+        description: "Date of the first date"
+        data_tests:
+          - not_null
+      - name: most_recent_order_date
+        description: "Most recent order date"
+        data_tests:
+          - not_null
+      - name: number_of_orders
+        description: "Number of orders made"
+        data_tests:
+          - not_null

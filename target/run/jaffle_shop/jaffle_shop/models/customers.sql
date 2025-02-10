@@ -8,8 +8,6 @@
     select
         id as customer_id,
         name as customer_name
-        --first_name,
-        --last_name
 
     from public.raw_customers
 
@@ -20,9 +18,7 @@ orders as (
     select
         id as order_id,
         customer as customer_id,
-        --user_id as customer_id,
         ordered_at as order_date,
-        --status
         order_total
 
     from public.raw_orders
@@ -48,8 +44,6 @@ final as (
 
     select
         customers.customer_id,
-        --customers.first_name,
-        --customers.last_name,
         customer_name,
         customer_orders.first_order_date,
         customer_orders.most_recent_order_date,
