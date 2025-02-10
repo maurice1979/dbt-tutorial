@@ -1,6 +1,6 @@
 # dbt-tutorial
 
-This tutorial is based on the official [dbt Quickstart guide](https://docs.getdbt.com/guides).
+This tutorial is based on the official [dbt Quickstart guide](https://docs.getdbt.com/guides). 
 
 
 ## Virtual environment
@@ -24,6 +24,10 @@ Start the container with:
 docker run --name jaffle_shop_db -p 5432:5432 -d postgres_dbt
 ```
 
+# Jaffle shop data
+
+This project does not include the data from the jaffle shop. Download the data from [this repository](https://github.com/dbt-labs/jaffle-shop-data) and put the content in the folder called `jaffle-data`
+
 # Steps
 
 Once the docker container is created and running
@@ -31,3 +35,4 @@ Once the docker container is created and running
 1. cd jaffle_shop
 2. uv run dbt debug
 3. uv run dbt run
+4. uv run dbt seed # to load the jaffle-data into the database.
