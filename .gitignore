@@ -9,3 +9,4 @@ target/manifest.json
 target/compiled/jaffle_shop/jaffle_shop/models/example/schema.yml/not_null_my_first_dbt_model_id.sql
 logs/dbt.log
 logs/dbt.log
+logs/dbt.log
