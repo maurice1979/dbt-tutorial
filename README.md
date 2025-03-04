@@ -16,6 +16,11 @@ Run the command from the dbt tutorial with `uv run <command>`.
 >
 > `export DBT_TARGET=<your-target>`
 
+```bash
+export DBT_PROFILES_DIR=~/.dbt
+export DBT_TARGET=dev
+```
+
 # Create a Docker container for the Database
 
 Since we do not want to use a cloud database, we are going to create a container with a postgresql DB that will be used for the tutorial.
